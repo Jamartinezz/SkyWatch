@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter a city name" spellcheck="false">
+            <button>
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/svg/search-outline.svg" alt="search">
+            </button>
+        </div>
+        
+        <div class="error-message">
+            <p>City not found. Please try again with a valid city name.</p>
+        </div>
+        
+        <div class="weather-box">
+            <p class="location"></p>
+            <p class="date"></p>
+            <img src="" alt="weather icon">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        
+        <div class="weather-details">
+            <div class="humidity">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/svg/water-outline.svg" alt="humidity">
+                <div class="text">
+                    <span id="humidity-value"></span>
+                    <p class="humidity-text">Humidity</p>
+                </div>
+            </div>
+            
+            <div class="wind">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/svg/speedometer-outline.svg" alt="wind">
+                <div class="text">
+                    <span id="wind-speed"></span>
+                    <p class="wind-text">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
